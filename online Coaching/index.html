@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Amine Yahiaoui | Coaching</title>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        emailjs.init("user_YOUR_EMAILJS_USER_ID");
+    </script>
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <div class="nav__header">
+          <div class="nav__logo">
+            <a href="#"><img src="assets/logo.png" alt="logo" />On Line Coaching</a>
+          </div>
+          <div class="nav__menu__btn" id="menu-btn">
+            <span><i class="ri-menu-line"></i></span>
+          </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li class="link"><a href="#home">Acceuil</a></li>
+          <li class="link"><a href="#about">A propos de Moi</a></li>
+          <li class="link"><a href="#class">Classes</a></li>
+          <li class="link"><a href="#price">Mes Packs</a></li>
+          <li class="link"><a href="#trainer">Articles Sportifs(cooming soon)</a></li>
+
+          <li class="link">  <button class="btn" onclick="redirectToEmail()"> Contactez MOI </button></li>
+          <script type="text/javascript">
+            function redirectToWhatsApp() {
+                // Replace the placeholder values with the actual phone number
+                var phoneNumber = '+213540092501';  // Include the country code
+        
+                // Construct the WhatsApp link
+                var whatsappLink = 'https://wa.me/' + phoneNumber;
+        
+                // Open WhatsApp in a new tab
+                window.open(whatsappLink, '_blank');
+            }
+        </script>
+          <script type="text/javascript">
+            function redirectToEmail() {
+                // Replace the placeholder values with the actual email address and subject
+                var emailAddress = 'starproductiondz@gmail.com';
+                var subject = 'Entraimment';
+        
+                // Construct the mailto link
+                var mailtoLink = 'mailto:' + emailAddress + '?subject=' + encodeURIComponent(subject);
+        
+                // Open the default email client
+                window.location.href = mailtoLink;
+            }
+        </script>
+        </ul>
+      </nav>
+      <div class="section__container header__container" id="home">
+        <div class="header__image">
+          <img src="assets/header.png" alt="header" />
+        </div>
+        <div class="header__content">
+          <h4>Développez votre corps &</h4>
+          <h1 class="section__header">Mettez-vous en forme !</h1>
+          <p id="pfont1">
+            Libérez votre potentiel et embarquez pour un voyage vers une personne plus forte, plus en forme et plus sûre d'elle. Inscrivez-vous dès maintenant au programme "Make Your Body Shape" et découvrez l'incroyable transformation dont votre corps est capable !
+          </p>
+          <div class="header__btn">
+            <button class="btn">Inscrivez-vous dès aujourd'hui</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="section__container about__container" id="about">
+      <div class="about__image">
+        <img class="about__bg" src="assets/dot-bg.png" alt="bg" />
+        <img src="assets/about.png" alt="about" />
+      </div>
+      <div class="about__content">
+        <h2 class="section__header">A propos de Moi</h2>
+        <p class="section__description">
+          Je suis un modèle fitness passionné et dévoué, fusionnant ma passion pour la condition physique avec un rôle polyvalent de coach personnel et collectif. Mon parcours dans le monde du fitness n'est pas seulement axé sur le physique, mais aussi sur l'inspiration, l'autonomisation et le bien-être holistique.
+        </p>
+        <div class="about__grid">
+          <div class="about__card">
+            <span><i class="ri-open-arm-line"></i></span>
+            <div>
+              <h4>En tant que modèle fitness</h4>
+              <p>
+                je m'efforce de repousser les limites de mes propres capacités physiques, illustrant le résultat d'une discipline acharnée, d'un entraînement assidu et d'un mode de vie sain. Mon engagement envers une vie active et équilibrée se reflète dans mon apparence physique, mais surtout dans ma mentalité positive et énergique.
+              </p>
+            </div>
+          </div>
+          <div class="about__card">
+            <span><i class="ri-shield-cross-line"></i></span>
+            <div>
+              <h4>En tant que coach personnel</h4>
+              <p>
+                mon objectif est d'accompagner individuellement mes clients vers leurs objectifs de fitness. J'adopte une approche personnalisée, créant des programmes d'entraînement adaptés à leurs besoins spécifiques, tout en offrant un soutien constant pour les guider vers leur meilleure version.
+              </p>
+            </div>
+          </div>
+          <div class="about__card">
+            <span><i class="ri-p2p-line"></i></span>
+            <div>
+              <h4>En tant que coach (cours collectifs)</h4>
+              <p>
+                Mon coaching intègre des éléments de motivation, de conseils en nutrition et de développement personnel, créant une approche holistique du bien-être. Mon objectif ultime est d'inspirer mes clients à adopter un mode de vie sain et à apprécier le voyage vers une meilleure santé physique et mentale.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container class__container" id="class">
+      <h2 class="section__header">Mes Programmes</h2>
+      <p class="section__description">
+        Découvrez une gamme variée de cours exaltants dont je vous propse, conçus pour répondre à tous les niveaux
+         de condition physique et à tous les centres d'intérêt. Que vous soyez un athlète chevronné ou que vous commenciez 
+        à peine votre parcours de remise en forme, mes cours offrent quelque chose pour tout le monde.
+      </p>
+      
+        </div>
+      <div class="class__grid">
+        <div class="class__card">
+          <img src="assets/dot-bg.png" alt="bg" class="class__bg" />
+          <img src="assets/class-1.jpg" alt="class" />
+          <div class="class__content">
+            <h4>Strength Training</h4>
+            <p>Resistance et Musculation</p>
+          </div>
+        </div>
+        <div class="class__card">
+          <img src="assets/dot-bg.png" alt="bg" class="class__bg" />
+          <img src="assets/class-2.jpg" alt="class" />
+          <div class="class__content">
+            <h4>Perte de Poids</h4>
+            <p>Exercices et Nutrtion</p>
+          </div>
+
+          
+        </div>
+        <div class="class__card">
+          <img src="assets/dot-bg.png" alt="bg" class="class__bg" />
+          <img src="assets/class-3.JPG" alt="class" />
+          <div class="class__content">
+            <h4>Body Shape Training</h4>
+            <p>Fitness et  Renforcement </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="section__container trainer__container" id="trainer">
+      <h2 class="section__header">Our Trainers</h2>
+      <p class="section__description">
+        Our trainers are more than just experts in exercise; they are passionate
+        about helping you achieve your health and fitness goals. Our trainers
+        are equipped to tailor workout programs to meet your unique needs.
+      </p>
+      <div class="trainer__grid">
+        <div class="trainer__card">
+          <img src="assets/trainer-1.jpg" alt="trainer" />
+        </div>
+        <div class="trainer__card">
+          <div class="trainer__content">
+            <h4>James Rodriguez</h4>
+            <h5>Strength and Conditioning</h5>
+            <hr />
+            <p>
+              With a background in competitive sports, he's dedicated to helping
+              you reach your peak physical performance.
+            </p>
+            <div class="trainer__socials">
+              <a href="#"><i class="ri-facebook-fill"></i></a>
+              <a href="#"><i class="ri-google-fill"></i></a>
+              <a href="#"><i class="ri-instagram-line"></i></a>
+              <a href="#"><i class="ri-twitter-fill"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="trainer__card">
+          <img src="assets/trainer-2.jpg" alt="trainer" />
+        </div>
+        <div class="trainer__card">
+          <div class="trainer__content">
+            <h4>Mark Harris</h4>
+            <h5>HIIT and Functional</h5>
+            <hr />
+            <p>
+              His energetic and dynamic workouts are designed to push your
+              limits, boost metabolism, and torch calories.
+            </p>
+            <div class="trainer__socials">
+              <a href="#"><i class="ri-facebook-fill"></i></a>
+              <a href="#"><i class="ri-google-fill"></i></a>
+              <a href="#"><i class="ri-instagram-line"></i></a>
+              <a href="#"><i class="ri-twitter-fill"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="trainer__card">
+          <img src="assets/trainer-3.jpg" alt="trainer" />
+        </div>
+        <div class="trainer__card">
+          <div class="trainer__content">
+            <h4>Emily Davis</h4>
+            <h5>Yoga and Mindfulness</h5>
+            <hr />
+            <p>
+              Emily's sessions are about physical postures and also about
+              cultivating inner peace and mindfulness.
+            </p>
+            <div class="trainer__socials">
+              <a href="#"><i class="ri-facebook-fill"></i></a>
+              <a href="#"><i class="ri-google-fill"></i></a>
+              <a href="#"><i class="ri-instagram-line"></i></a>
+              <a href="#"><i class="ri-twitter-fill"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+-->
+    <section class="section__container price__container" id="price">
+      <h2 class="section__header">Mes Packs</h2>
+      <p class="section__description">
+        Mes  packs tarifaires comprend plusieurs niveaux d'adhésion, 
+        chacun étant conçu pour répondre à différentes préférences et aspirations en matière de fitness.
+        pour répondre aux différentes préférences et aspirations en matière de remise en forme.
+      </p>
+      <div class="price__grid">
+        <div class="price__card">
+          <div class="price__content">
+            <h4>Pack 1</h4>
+            <img src="assets/price-1.png" alt="price" />
+            <p>
+              Mon programme de base est le point de départ idéal pour
+               les personnes qui souhaitent démarrer leur parcours
+                de remise en forme ou maintenir un mode de vie actif.
+            </p>
+            <hr />
+            <h4>Caractéristiques principales</h4>
+            <p>Programme d'entraînement intelligent</p>
+            <p>Entraînements à domicile</p>
+          </div>
+          <button class="btn"  onclick="redirectToWhatsApp()">S'inscrire</button>
+        </div>
+        <div class="price__card">
+          <div class="price__content">
+            <h4>Pack 2</h4>
+            <img src="assets/price-2.png" alt="price" />
+            <p>
+              Mon programme hebdomadaire est conçu
+              pour structurer et varier vos séances d'entraînement,
+               afin que vous restiez motivé et sur la bonne voie.
+            </p>
+            <hr />
+            <h4>Caractéristiques principales</h4>
+            <p>PRO Gyms</p>
+            <p>Programme d'entraînement intelligent</p>
+            <p>Entraînements à domicile</p>
+          </div>
+          <button class="btn"  onclick="redirectToWhatsApp()">S'inscrire</button>
+        </div>
+        <div class="price__card">
+          <div class="price__content">
+            <h4>Pack 3</h4>
+            <img src="assets/price-3.png" alt="price" />
+            <p>
+              Grâce à ce Pack flexible, 
+              vous aurez accès à tous mes cours virtueles, 
+              à un règime alimentaire et un suivi perssonel.
+            </p>
+            <hr />
+            <h4>Caractéristiques principales</h4>
+            <p>ELITE Gyms & Classes</p>
+            <p>PRO Gyms</p>
+            <p>Programme d'entraînement intelligent</p>
+            <p>Entraînements à domicile</p>
+            <p>Entraînement personnel</p>
+          </div>
+          <button class="btn"  onclick="redirectToWhatsApp()">S'inscrire</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container client__container" id="client">
+      <h2 class="section__header">Conseils de  Nutrition par Amine Yahiaoui</h2>
+      <p class="section__description">
+        - Limiter la consommation des aliments à forte densité  énergétique. <br> - Contrôler la taille des portions. <br> - Se consacrer au repas, être attentif à son assiette.<br> 
+        - Apprendre à lire les étiquettes d’information sur les emballages .<br>
+      </p>
+      
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="footer__logo">
+            <a href="#"><img src="assets/logo.png" alt="logo" />Amine Fit</a>
+          </div>
+          <p id="pfont">
+            Faites le premier pas vers une meilleure santé
+             et une plus grande force grâce à mes  plans tarifaires
+              imbattables. Transpirons, réalisons et conquérons ensemble !
+          </p>
+          <div class="footer__socials">
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+            <a href="#"><i class="ri-instagram-line"></i></a>
+            <a href="#"><i class="ri-twitter-fill"></i></a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4>Lieu :</h4>
+          <div class="footer__links">
+            <p>
+              Oran,Algerie
+            </p>
+          </div>
+        </div>
+        
+        <div class="footer__col">
+          <h4>Whatssp</h4>
+          <div class="footer__links">
+            <p >
+             +213 05289984778          </p>
+          </div>
+        </div>
+      </div>
+      
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
